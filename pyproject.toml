@@ -7,7 +7,7 @@ description = "Performance-critical functionality for Unblob"
 license = {file = "LICENSE"}
 readme = "README.md"
 
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 dynamic = ["version"] # Calculated from the rust module version
 dependencies = []
 
@@ -25,11 +25,11 @@ python-source = "python"
 
 features = [
   "pyo3/extension-module",  # This is an extension module
-  "pyo3/abi3-py38"          # https://docs.python.org/3/c-api/stable.html
+  "pyo3/abi3-py39"          # https://docs.python.org/3/c-api/stable.html
 ]
 
 [tool.ruff]
-target-version = "py38"
+target-version = "py39"
 
 [tool.ruff.lint]
 select = [
@@ -71,7 +71,6 @@ ignore = [
   "D213",    # multi-line-summary-second-line: D212 (multi-line-summary-first-line) is used instead
   "E501",    # line-too-long:                  Let black handle line length violations
   "TRY003",  # raise-vanilla-args:             We are adding contextual information in exception messages
-  "UP007",   # non-pep604-annotation:          Python 3.8 support needs legacy annotations
 ]
 
 [tool.ruff.lint.per-file-ignores]
@@ -97,7 +96,7 @@ parametrize-names-type = "csv"
 [tool.pyright]
 include = ["unblob_native", "tests"]
 stubPath = "."
-pythonVersion = "3.8"
+pythonVersion = "3.9"
 # Strict mode enables additional checks:
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md#diagnostic-rule-defaults
 typeCheckingMode = "strict"

@@ -38,7 +38,7 @@ repos:
           - fmt
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.21.0
+    rev: 0.29.4
     hooks:
       - id: check-github-actions
         name: Check Github actions
