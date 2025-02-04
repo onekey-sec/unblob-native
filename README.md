@@ -1,3 +1,7 @@
+**NOTE**: This repository is merged into https://github.com/onekey-sec/unblob 
+
+---
+
 # unblob-native
 
 Looking for Unblob? Check out at https://unblob.org.
